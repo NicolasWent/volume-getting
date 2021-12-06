@@ -11,7 +11,7 @@ def to_datetime(to_convert: int) -> datetime:
 def display_data(data, since, amount):
     timestamps = []
     volumes = []
-    t_minus = int(time.time()) - 1000 * 3600 * 24 * 30 * 12 * since
+    t_minus = int(time.time() * 1000.0) - 1000 * 3600 * 24 * 30 * 12 * since
     for t in data:
         if t > t_minus:
             timestamps.append(to_datetime(t))
