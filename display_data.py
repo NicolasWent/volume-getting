@@ -19,6 +19,6 @@ def display_data(data):
     plt.plot(timestamps, volumes)
     plt.xlabel("Dates")
     plt.ylabel("Volumes")
-    plt.title("Evolution of the volume of the 1000 best actual crypto over time")
+    plt.title("Evolution of the volume of the 500 best actual crypto over time")
     plt.grid(axis="y")
     plt.savefig("volumes.png")

@@ -4,7 +4,7 @@ from display_data import display_data
 
 
 def main():
-    data = get_data(1000)
+    data = get_data(500)
     data = compute_data(data)
     display_data(data)
 
