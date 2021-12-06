@@ -25,6 +25,10 @@ It do calls to the coingecko API in order to get the best crypto and their volum
 
 > python main.py
 
+To get the list of possible arguments:
+
+> python main.py -h
+
 ##### Get the resulting image
 
 The resulting image is inside of the file "volumes.png"
