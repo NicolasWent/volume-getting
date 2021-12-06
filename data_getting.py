@@ -45,7 +45,7 @@ def get_data(amount: int) -> {str: {int: float}}:
         }
     }
     """
-    coins = _get_current_best_symbols(10)
+    coins = _get_current_best_symbols(amount)
     ret = {}
     for c in coins:
         brute_data = cg_call(lambda: cg.get_coin_market_chart_by_id(c, "usd", "max")["total_volumes"])
